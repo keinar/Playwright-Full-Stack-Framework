@@ -67,6 +67,14 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         baseURL: process.env.BASE_URL
       },
+    },
+    {
+      name: 'data-validation-tests',
+      testDir: './tests/data',
+      use: { 
+        ...devices['Desktop Chrome'],
+        baseURL: process.env.BASE_URL
+      },
     }
   ],
 });
